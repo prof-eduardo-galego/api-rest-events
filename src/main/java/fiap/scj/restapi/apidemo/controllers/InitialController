@@ -1,0 +1,14 @@
+package fiap.scj.restapi.apidemo.controllers;
+
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/")
+public class EventController {
+
+    @GetMapping
+    public String listAll() {
+        return "Deploy da aplicação feita com sucesso!"
+    }
+
+}
